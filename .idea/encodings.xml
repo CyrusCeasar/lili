@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/bots" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/docs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/AB.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/AIMLMap.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/AIMLProcessor.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/AIMLProcessorExtension.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/AIMLSet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/Bot.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/Category.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/Chat.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/ChatRobot.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/ChatTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/Clause.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/Contact.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/EnglishNumberToWords.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/Graphmaster.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/History.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/Inflector.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/InflectorTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/MagicBooleans.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/MagicNumbers.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/MagicStrings.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/MemStats.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/Nodemapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/NodemapperOperator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/PCAIMLProcessorExtension.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/ParseState.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/Path.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/PreProcessor.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/Predicates.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/Properties.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/Sraix.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/StarBindings.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/Stars.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/TestAB.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/Timer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/TripleStore.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/Tuple.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/Utilities.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/Verbs.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/utils/CalendarUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/utils/DomUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/utils/IOUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/utils/IntervalUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/utils/JapaneseUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/utils/MemoryUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/alicebot/ab/utils/NetworkUtils.java" charset="UTF-8" />
+  </component>
+</project>

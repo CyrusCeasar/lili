@@ -3,6 +3,8 @@ package cn.sz.lili;
 import org.alicebot.ab.ChatRobot;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -13,8 +15,11 @@ import java.io.IOException;
 /**
  * Created by chenlei2 on 2017/6/23 0023.
  */
-public class TestService extends HttpServlet{
-    @Override
+@Controller
+public class TestService {
+
+
+    @RequestMapping(value = "test")
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //        super.doGet(req, resp);
         String reqMsg = req.getParameter("req_msg");

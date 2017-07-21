@@ -3,13 +3,13 @@
 <mapper namespace="cn.sz.lili.module.PromptMsgMapper">
 
     <resultMap type="cn.sz.lili.module.PromptMsg" id="PromptMsg">
-        <result property="id" column="id"/>
-        <result property="content" column="content"/>
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="content" column="content" jdbcType="VARCHAR"/>
     </resultMap>
 
     <!-- 查询学生，根据id -->
     <select id="getRandomPromptMsg"  resultMap="PromptMsg">
-         SELECT * FROM lili.tb_prompt_msg  ORDER BY  RAND() LIMIT 1
+         SELECT `id`, `content` FROM lili.tb_prompt_msg LIMIT 1;
     </select>
 
 

@@ -4,12 +4,12 @@ import cn.sz.lili.module.PromptMsg;
 import cn.sz.lili.module.PromptMsgMapper;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.annotation.Resource;
 
 /**
  * Created by chenlei2 on 2017/6/29 0029.
@@ -17,8 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class PromptMsgService  {
 
-    @Autowired
-    @Qualifier("promptMsgMapper")
+    @Resource(name = "promptMsgMapper")
     PromptMsgMapper promptMsgMapper;
 
     @ResponseBody

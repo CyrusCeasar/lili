@@ -19,7 +19,7 @@ import java.io.IOException;
 public class TestService {
 
 
-    @RequestMapping(value = "test")
+    @RequestMapping(value = "test.json")
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //        super.doGet(req, resp);
         String reqMsg = req.getParameter("req_msg");

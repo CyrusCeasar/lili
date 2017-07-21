@@ -3,12 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<form >
-   please input content:<br>
+
+<div class="font-size-16">
+    <b>You said:</b> hello
+</div>
+
+<div>
+    <b>L.I.L.I.:</b> Hi there!
+</div>
+
+<div class="say-area font-size-14">
+    <b>You say:</b>
     <input type="text" id="input_inputcontent">
-    <button value="Send" id="btn_send" type="submit" name="Send" />
-</form>
+    <button id="btn_send" type="button" onclick="say();">Say</button>
+</div>
+
+<hr/>
+
+<div class="conversation-log-area">
+    <b class="font-size-14">Conversation Log:</b><br>
+    <div id="one-conversation" class="hide">
+        <div>
+            <div class="inline-div vertical-align-top" style="width: 5vw">You:</div>
+            <div id="your-say" class="inline-div vertical-align-top" style="width: 90vw;"></div>
+        </div>
+        <div>
+            <div class="inline-div vertical-align-top" style="width: 5vw">LiLi:</div>
+            <div id="alice-answer" class="inline-div vertical-align-top" style="width: 90vw;"></div>
+        </div>
+    </div>
+</div>
+
 </body>
+
+<!--引入js文件时要根据以来关系来决定引入的先后顺序，被依赖的要在前面引入-->
+<script src="js/jquery/jquery-3.1.1.min.js"></script>
+<script src="js/request.js"></script>
+<script src="js/interface.js"></script>
+<script type="text/javascript" >
+    var conversationArea = $(".conversation-log-area");
+    var conversationDiv = $("#one-conversation");
+    var questionDiv = $("#your-say");
+    var answerDiv = $("#alice-answer");
+    var questionInput = $("#input_inputcontent");
+    function say() {
+        console.log(questionInput);
+        var question = questionInput.val();
+        console.log("say:" + question);
+        chat("req_msg="+question, function (data) {
+            questionDiv.text(question);
+            answerDiv.text(data.result_content);
+            conversationArea.append(conversationDiv.clone().removeClass("hide"));
+        }, function (data) {
+            alert("请求失败");
+        });
+    }
+//    $("#btn_send").click(function() {
+//        say();
+//    });
+</script>
 </html>

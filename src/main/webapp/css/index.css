@@ -1,0 +1,42 @@
+/*这种写法会影响引入了此css文件的页面的所有输入框的样式，
+当一个页面存在多个输入框时不建议这样写，可以按照正常的class的写法*/
+input {
+    width: 50vw;
+}
+
+/*class写法*/
+.say-area {
+    /*外边距，数值分别代表上、右、下、左四个方向的边距*/
+    margin: 20px 1vw 20px 1vw;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.conversation-log-area {
+    margin-top: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.inline-div {
+    display: inline-block;
+}
+
+.wrapping-lines {
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+

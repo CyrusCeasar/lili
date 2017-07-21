@@ -1,4 +1,4 @@
-//package cn.sz.lili;
+package cn.sz.lili;//package cn.sz.lili;
 //
 //
 //import cn.sz.lili.module.PromptMsg;

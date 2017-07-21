@@ -4,4 +4,4 @@
     <mappers>
         <mapper resource="./PromptMsgMapper.xml" />
     </mappers>
-</configuration>   
+</configuration>

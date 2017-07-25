@@ -8,7 +8,8 @@ cookieOptions.expires = 365;
 
 function buildUrl(pathname) {
 
-    var host = "39.108.179.107";
+  //  var host = "39.108.179.107";
+    var host = "localhost";
     console.log(host);
     if (host == null || host == "null") {
         console.log("host is null");

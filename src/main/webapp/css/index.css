@@ -2,6 +2,7 @@
 当一个页面存在多个输入框时不建议这样写，可以按照正常的class的写法*/
 input {
     width: 50vw;
+    height: 1.5vw;
 }
 
 /*class写法*/
@@ -11,11 +12,11 @@ input {
 }
 
 .font-size-16 {
-    font-size: 16px;
+    font-size: 2vw;
 }
 
 .font-size-14 {
-    font-size: 14px;
+    font-size: 1.5vw;
 }
 
 .conversation-log-area {

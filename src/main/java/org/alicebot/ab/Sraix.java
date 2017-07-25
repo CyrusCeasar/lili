@@ -19,6 +19,9 @@ package org.alicebot.ab;
         Boston, MA  02110-1301, USA.
 */
 
+import cn.sz.lili.SpringBeanFactoryUtils;
+import cn.sz.lili.module.UnknownQuestion;
+import cn.sz.lili.module.UnknownQuestionMapper;
 import org.alicebot.ab.utils.CalendarUtils;
 import org.alicebot.ab.utils.NetworkUtils;
 import org.json.JSONArray;
@@ -32,6 +35,7 @@ import java.util.regex.Pattern;
 
 
 public class Sraix {
+
 
     public static HashMap<String, String> custIdMap = new HashMap<String, String>();
 
@@ -145,6 +149,11 @@ public class Sraix {
             }
             // https://weannie.pannous.com/api?input=when+is+daylight+savings+time+in+the+us&locale=en_US&login=pandorabots&ip=169.254.178.212&botid=0&key=CKNgaaVLvNcLhDupiJ1R8vtPzHzWc8mhIQDFSYWj&exclude=Dialogues,ChatBot&out=json
             // exclude=Dialogues,ChatBot&out=json&clientFeatures=show-images,reminder,say&debug=true
+            UnknownQuestion unknownQuestion = new UnknownQuestion();
+            unknownQuestion.setContent(input);
+            UnknownQuestionMapper unknownQuestionMapper =  SpringBeanFactoryUtils.getApplicationContext().getBean(UnknownQuestionMapper.class);
+            unknownQuestionMapper.saveUnknownQuestion(unknownQuestion);
+
 			String url = "http://ask.pannous.com/api?input="+input+"&locale=en_US&timeZone="+offset+locationString+"&login="+MagicStrings.pannous_login+"&ip="+NetworkUtils.localIPAddress()+"&botid=0&key="+MagicStrings.pannous_api_key+"&exclude=Dialogues,ChatBot&out=json&clientFeatures=show-images,reminder,say&debug=true";
             MagicBooleans.trace("in Sraix.sraixPannous, url: '" + url + "'");
             String page = NetworkUtils.responseContent(url);

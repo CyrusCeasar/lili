@@ -12,6 +12,4 @@
          SELECT `id`, `content` FROM lili.tb_prompt_msg LIMIT 1;
     </select>
 
-
-
 </mapper>  

@@ -4,5 +4,5 @@
 
 
 function chat(dto, success, fail) {
-    doGet("/lili/test.json", dto, success, fail);
+    doGet("/test.json", dto, success, fail);
 }

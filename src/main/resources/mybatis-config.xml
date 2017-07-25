@@ -3,5 +3,6 @@
 <configuration>
     <mappers>
         <mapper resource="./PromptMsgMapper.xml" />
+        <mapper resource="./UnknownQuestionMapper.xml"/>
     </mappers>
 </configuration>
